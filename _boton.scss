@@ -1,0 +1,9 @@
+.row div {
+    background-color: rgb(151, 158, 172);
+    p a { 
+        background-color: $colorAzulGris !important;
+        &:hover {
+            background-color: rgba(226, 226, 32, 0.945) !important;
+        }
+    }
+}

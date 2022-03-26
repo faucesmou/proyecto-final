@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*no entiendo cómo declarar esta variable */
+.row div {
+  background-color: #979eac;
+}
+.row div p a {
+  background-color: #6969c0 !important;
+}
+.row div p a:hover {
+  background-color: rgba(226, 226, 32, 0.945) !important;
+}
+
+/*# sourceMappingURL=style-with-sass.css.map */

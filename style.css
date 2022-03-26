@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,600&display=swap');
+
+body {
+  background-image: linear-gradient(#063053, #8ca8c1, #e0f0ff);
+}
+
+/* COMMON STYLES */
+
+.fraseinicial {
+  color: #e0f0ff;
+}
+.section1index {
+  background-color: #43617c;
+}
+
+#divAnim {
+  width: 70px;
+  height: 70px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  width: fit-content;
+}
+
+.title-urban-style {
+  color: #b5b5b59c;
+}
+
+.colection-subtitle {
+  color: #000;
+}
+
+
+@media screen and (max-width: 380px) {
+  /* CSS DE LA PÁGINA "INDEX" VERSIÓN MOBILE-----------------------------------------------------------------------------"*/
+
+  .divmayor {
+    justify-content: center;
+  }
+  .headerindex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    justify-content: space-evenly;
+  }
+
+  .container-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .indumentaria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* ACÁ NO TOMA EL POSICIONAMIENTO QUE BUSCO (CENTRADO)*/
+  }
+
+  .navindex {
+    display: flex;
+    justify-content: center;
+  }
+  .linav1 a,
+  .linav2 a,
+  .linav3 a,
+  .linav4 a,
+  .linav5 a {
+    /*"LINAV2 A" NO PUEDO CENTRARLO JUNTO A LOS OTROS*/
+    color: rgb(1, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fotoamigos {
+    width: fit-content; /*buscar fit container*/
+    max-width: 600px;
+    max-height: 120px;
+    object-fit: contain; /* ESTE ERA UN INTENTO DE QUE LA IMAGEN NO TRANSGREDA EL CONTENEDOR*/
+    display: flex;
+    justify-content: flex-start; /*ACÁ NO ENTIENDO PORQUE NO ME CORRE LA IMAGEN A LA IZQUIERDA*/
+  }
+
+  .ulindex {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .li {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+
+  .div1index {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 150px);
+  }
+
+  .section1index {
+    display: flex;
+    justify-content: center;
+  }
+
+  .olindex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  .producto1 {
+    grid-area: producto1;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .producto2 {
+    grid-area: producto2;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .producto3 {
+    grid-area: producto3;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .producto4 {
+    grid-area: producto4;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .carrusel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+      'producto1 producto2'
+      'producto3 producto4';
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .articleindex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .construyendosentido,
+  .frase2,
+  .parrafohistoria,
+  .boxModel,
+  .publicidad,
+  .logofooter,
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .footerindex {
+    list-style: none;
+  }
+
+  @keyframes efecto {
+    5% {
+      width: 20px;
+    }
+    30% {
+      width: 30px;
+    }
+    60% {
+      width: 40px;
+      background-color: rgb(65, 136, 65);
+    }
+    70% {
+      width: 38px;
+    }
+    80% {
+      width: 35px;
+    }
+    85% {
+      width: 25px;
+    }
+    90% {
+      width: 20px;
+    }
+    100% {
+      width: 10px;
+      background-color: rgb(46, 180, 86);
+    }
+  }
+
+  .nuestraCom {
+    grid-area: nuestraCom;
+  }
+  .mediosDePago {
+    grid-area: mediosdepago;
+  }
+  .beneficios {
+    grid-area: beneficios;
+  }
+  .contacto {
+    grid-area: contacto;
+  }
+  .envios {
+    grid-area: envios;
+  }
+  .nuestrosLocales {
+    grid-area: nuestroslocales;
+  }
+
+  .footerindex {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      'nuestraCom mediosdepago'
+      'beneficios contacto'
+      'envios nuestroslocales';
+  }
+
+  /* CSS DE LA PÁGINA "PRODUCTOS" VERSIÓN MOBILE-----------------------------------------------------------------------------"*/
+
+  .headerproductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerproductos,
+  .ulproductos,
+  .linavProductos1 a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productos,
+  .fraseinicial {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .fraseinicial,
+  .fraseprotagonistas {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navproductos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ulproductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .linavProductos1 a,
+  .linavProductos2 a,
+  .linavProductos3 a,
+  .linavProductos4 a {
+    color: rgb(1, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenmodelos {
+    width: fit-content;
+    max-width: 600px;
+    max-height: 120px;
+    object-fit: contain; /* ESTE ERA UN INTENTO DE QUE LA IMAGEN NO TRANSGREDA EL CONTENEDOR*/
+    display: flex;
+    justify-content: flex-start; /*ACÁ NO ENTIENDO PORQUE NO ME CORRE LA IMAGEN A LA IZQUIERDA*/
+  }
+
+  .divlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: fit-content;
+    max-width: 150px;
+    max-height: 120px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  /* CSS DE LA PÁGINA "INDEX" VERSIÓN DESKOP-----------------------------------------------------------------------------"*/
+  .divmayor {
+    justify-content: space-between;
+  }
+  .headerindex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .navindex {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ulindex {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .linav1 a,
+  .linav2 a,
+  .linav3 a,
+  .linav4 a,
+  .linav5 a {
+    color: rgb(1, 2, 2);
+  }
+
+  .li {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+
+  .div1index {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section1index {
+    display: flex;
+    justify-content: center;
+  }
+
+  .olindex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+
+  .producto1 {
+    grid-area: producto1;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .producto2 {
+    grid-area: producto2;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .producto3 {
+    grid-area: producto3;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .producto4 {
+    grid-area: producto4;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .carrusel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+      'producto1 producto2'
+      'producto3 producto4';
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .articleindex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .construyendosentido,
+  .frase2,
+  .parrafohistoria,
+  .boxModel,
+  .publicidad,
+  .logofooter,
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .boxModel {
+    background: linear-gradient(
+      to bottom rgb(16, 16, 192),
+      rgba(94, 94, 236, 0.678)
+    ); /*este gradiente no me salió*/
+  }
+
+  @keyframes efecto {
+    5% {
+      width: 10%;
+    }
+    30% {
+      width: 20%;
+    }
+    60% {
+      width: 30%;
+      background-color: rgb(20, 21, 63);
+    }
+    70% {
+      width: 50%;
+    }
+    80% {
+      width: 60%;
+    }
+    85% {
+      width: 80%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+      background-color: rgb(196, 189, 226);
+    }
+  }
+
+  .nuestraCom {
+    grid-area: nuestraCom;
+  }
+  .mediosDePago {
+    grid-area: mediosdepago;
+  }
+  .beneficios {
+    grid-area: beneficios;
+  }
+  .contacto {
+    grid-area: contacto;
+  }
+  .envios {
+    grid-area: envios;
+  }
+  .nuestrosLocales {
+    grid-area: nuestroslocales;
+  }
+
+  .footerindex {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat (2, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+      '. .nuestraCom mediosdepago .'
+      '. beneficios contacto envios nuestroslocales';
+    list-style: none;
+  }
+
+  /* CSS DE LA PÁGINA "PRODUCTOS" VERSIÓN DESKOP-----------------------------------------------------------------------------"*/
+
+  .headerproductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .containerproductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .divfraseproductos,
+  .div1productos,
+  .figureproductos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .productos,
+  .fraseinicial,
+  .imagenmodelos,
+  .fraseprotagonistas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagenmodelos {
+    height: 300%;
+    width: 300%;
+  }
+
+  .fraseinicial,
+  .fraseprotagonistas {
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navproductos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ulproductos {
+    list-style: none;
+  }
+
+  .linavProductos1 a,
+  .linavProductos2 a,
+  .linavProductos3 a,
+  .linavProductos4 a {
+    color: rgb(1, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenmodelos {
+    width: fit-content;
+    max-width: 600px;
+    max-height: 120px;
+    object-fit: contain; /* ESTE ERA UN INTENTO DE QUE LA IMAGEN NO TRANSGREDA EL CONTENEDOR*/
+    display: flex;
+    justify-content: flex-start; /*ACÁ NO ENTIENDO PORQUE NO ME CORRE LA IMAGEN A LA IZQUIERDA*/
+  }
+
+  .divlogo,
+  .div2productos,
+  .construyendoS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: fit-content;
+    max-width: 150px;
+    max-height: 120px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nuestraCom {
+    grid-area: nuestraCom;
+  }
+  .mediosDePago {
+    grid-area: mediosdepago;
+  }
+  .beneficios {
+    grid-area: beneficios;
+  }
+  .contacto {
+    grid-area: contacto;
+  }
+  .envios {
+    grid-area: envios;
+  }
+  .nuestrosLocales {
+    grid-area: nuestroslocales;
+  }
+
+  .footerproductos {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat (2, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+      '. .nuestraCom mediosdepago .'
+      '. beneficios contacto envios nuestroslocales';
+    list-style: none;
+  }
+
+  .carruselproductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .img-fluid {
+    max-width: 70%;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* CSS DE LA PÁGINA "Nuestro Concepto" VERSIÓN DESKOP- ESTÁ TODO EN STYLES.SCSS--"*/

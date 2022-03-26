@@ -1,0 +1,403 @@
+
+/* COMMON STYLES */
+
+.fraseinicial {
+  color: #e0f0ff;
+}
+.section1index {
+  background-color: #43617c;
+}
+
+#divAnim {
+  width: 70px;
+  height: 70px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  width: fit-content;
+}
+
+.modelosplaya {
+  max-width: 100%;
+  height: auto;  
+}
+
+.olmensajesconcepto .mensajesaccesorios li {
+  padding: 20px;
+}
+
+.olmensajesconcepto .mensajesaccesorios {
+  padding: 0;
+  text-align: center;
+}
+
+/* CSS DE LA PÁGINA "Nuestro Concepto" VERSIÓN DESKOP #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+@media screen and (min-width: 400px) {
+
+  .divmayor {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .fraseplaya {
+    background-color: #67518a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .mensajescentrales {
+    background-color: rgba(114, 150, 230, 0.74);
+    margin: 2px !important;
+    padding: 4px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .mensajescentrales li {
+    border: solid 5px rgba(87, 111, 207, 0.678);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    padding: 0px 5px;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .mensajesaccesorios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: underline;
+  }
+  .mensajesaccesorios li {
+
+  }
+  .imagen1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: imagen1;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .imagen2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imagen2;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: imagen3;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: imagen4;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: imagen5;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .fotosconcepto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+        grid-template-areas: "imagen1 imagen1 imagen1 imagen1"
+ "imagen2 imagen3 imagen4 imagen5";
+    justify-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nuestraCom {
+    grid-area: nuestraCom;
+  }
+  .mediosDePago {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: mediosdepago;
+  }
+  .beneficios {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: beneficios;
+  }
+  .contacto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: contacto;
+  }
+  .envios {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: envios;
+  }
+  .nuestrosLocales {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    grid-area: nuestroslocales;
+  }
+  /*NO COMPRENDO PORQUE ME LO MARCA CON ERROR
+  .footerindex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[5];
+        grid-template-columns: repeat(5, auto);
+    -ms-grid-rows: repeat 2, auto;
+        grid-template-rows: repeat 2, auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+        grid-template-areas: ". .nuestraCom mediosdepago ."
+ ". beneficios contacto envios nuestroslocales";
+  }
+} */
+
+/* CSS DE LA PÁGINA "Nuestro Concepto" VERSIÓN MOBILE #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+@media screen and (max-width: 380px) {
+
+  .divmayor {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .divproductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: calc(100% - 150px);
+  }
+  .modelosplaya {
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 700px;
+    max-height: 170px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section1nc {
+    background-color: #ac16c0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* USO DE CONDICIONALES #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+  .video {
+    width: 560px -200;
+    height: 315 -100;
+    border-style: dashed solid;
+  }
+  .divlogo .logo {
+    width: 350px;
+    height: 75px;
+    background-color: blue;
+  }
+  .li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .olmensajesconcepto .mensajescentrales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .olmensajesconcepto .mensajescentrales li h6 {
+    border: solid 5px rgba(10, 134, 31, 0.678);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    list-style: none;
+  }
+  .olmensajesconcepto .mensajescentrales .mensajesaccesorios li h6 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    /* no puedo sacar el numerado de cada frase*/
+  }
+  .imagen1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: imagen1;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .imagen2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imagen2;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: imagen3;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: imagen4;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .imagen5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: imagen5;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .fotosconcepto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+        grid-template-areas: "imagen1 imagen1 imagen1 imagen1"
+ "imagen2 imagen3 imagen4 imagen5";
+    justify-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nuestraCom {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: nuestraCom;
+  }
+  .mediosDePago {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mediosdepago;
+  }
+  .beneficios {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: beneficios;
+  }
+  .contacto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: contacto;
+  }
+  .envios {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: envios;
+  }
+  .nuestrosLocales {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: nuestroslocales;
+  }
+  .footerproductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+        grid-template-areas: "nuestraCom mediosdepago"
+ "beneficios contacto"
+ "envios nuestroslocales";
+  }
+}
+/*# sourceMappingURL=styles.css.map */
